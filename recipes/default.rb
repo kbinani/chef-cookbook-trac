@@ -83,7 +83,7 @@ template "trac-ini" do
 end
 
 template "trac-conf" do
-  path "/etc/apache2/sites-available/trac.conf"
+  path "#{node['apache']['dir']}/sites-available/trac.conf"
   source "trac.conf.erb"
   owner "root"
   group "root"

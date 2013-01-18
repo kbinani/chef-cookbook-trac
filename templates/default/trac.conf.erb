@@ -6,8 +6,8 @@
    ServerAlias <%=vhost%>
    <% end %>
 
-   ErrorLog /var/log/apache2/trac-error.log
-   TransferLog /var/log/apache2/trac-access.log
+   ErrorLog <%= node['apache']['log_dir'] %>/trac-error.log
+   TransferLog <%= node['apache']['log_dir'] %>/trac-access.log
 
    #DefaultMaxClassProcessCount 5
 
