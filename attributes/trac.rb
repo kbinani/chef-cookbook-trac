@@ -26,3 +26,5 @@ default['trac']['required_groups'] = []
 default['trac']['svn_dir'] = "/srv/svn/code-trac"
 default['trac']['svn_branches'] = [""]
 default['trac']['svn_tags'] = [""]
+default['trac']['user'] = "www-data"
+default['trac']['group'] = "www-data"
