@@ -28,3 +28,4 @@ default['trac']['svn_branches'] = [""]
 default['trac']['svn_tags'] = [""]
 default['trac']['user'] = "www-data"
 default['trac']['group'] = "www-data"
+default['trac']['apache_modules'] = ["mod_rewrite", "mod_fcgid", "mod_deflate"]

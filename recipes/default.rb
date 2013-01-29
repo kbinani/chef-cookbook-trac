@@ -18,9 +18,9 @@
 #
 
 include_recipe "apache2"
-include_recipe "apache2::mod_rewrite"
-include_recipe "apache2::mod_fcgid"
-include_recipe "apache2::mod_deflate"
+node["trac"]["apache_modules"].each {|name|
+  include_recipe "apache2::#{name}"
+}
 
 package "trac" do
   action :install
